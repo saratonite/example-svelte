@@ -1,7 +1,10 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 	import { css } from '$styled-system/css';
 	import { container, flex } from '$styled-system/patterns';
+	import type { PageData } from './$types';
+	import NavLink from '$components/NavLink.svelte';
+	export let data: PageData;
 </script>
 
 <main
@@ -18,9 +21,10 @@
 		})}
 	>
 		<h1 class={css({ fontSize: '4xl' })}>Example Svelte</h1>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/about">About</a>
+		<nav class={css({ display: 'flex', gap: 4 })}>
+			{#each data.links as link}
+				<NavLink {link} />
+			{/each}
 		</nav>
 	</header>
 	<section
