@@ -2,9 +2,9 @@
 	import '../app.css';
 	import { css } from '$styled-system/css';
 	import { container, flex } from '$styled-system/patterns';
-	import type { PageData } from './$types';
+	import type { LayoutData } from './$types';
 	import NavLink from '$components/NavLink.svelte';
-	export let data: PageData;
+	export let data: LayoutData;
 </script>
 
 <main

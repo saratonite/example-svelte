@@ -1,4 +1,4 @@
-import type { PageLoad } from './$types';
+import type { LayoutLoad } from './$types';
 import type { INavLink } from '$lib/types';
 
 const links: INavLink[] = [
@@ -20,7 +20,7 @@ const links: INavLink[] = [
 	}
 ];
 
-export const load: PageLoad = () => {
+export const load: LayoutLoad = () => {
 	return {
 		links
 	};
