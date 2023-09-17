@@ -4,10 +4,13 @@ export const actions = {
 	default: async (event) => {
 		let data = await event.request.formData();
 
-		console.log('Form data ', data);
-
+		let item = {
+			name: data.get('name'),
+			email: data.get('email')
+		};
 		return {
-			success: true
+			success: true,
+			item
 		};
 	}
 } satisfies Actions;
