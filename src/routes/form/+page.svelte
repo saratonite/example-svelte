@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Button from '$components/Button.svelte';
 	import Label from '$components/Label.svelte';
 	import { css } from '$styled-system/css';
 	import type { ActionData } from './$types';
@@ -44,14 +45,7 @@
 		</div>
 
 		<div>
-			<button
-				class={css({
-					px: 2,
-					py: 1,
-					bg: 'yellow.400',
-					rounded: 'lg'
-				})}>Submit</button
-			>
+			<Button>Submit</Button>
 		</div>
 	</form>
 </div>
