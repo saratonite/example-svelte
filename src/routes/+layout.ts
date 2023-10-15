@@ -21,6 +21,10 @@ const links: INavLink[] = [
 	{
 		name: 'State',
 		link: '/state'
+	},
+	{
+		name: 'Store',
+		link: '/store'
 	}
 ];
 

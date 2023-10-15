@@ -1,8 +1,9 @@
 <script lang="ts">
 	import Button from '$components/Button.svelte';
+	import Label from '$components/Label.svelte';
 </script>
 
-<h1>State</h1>
+<Label>State</Label>
 <Button
 	on:click={() => {
 		alert('Hoo');
